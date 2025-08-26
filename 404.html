@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=/exponent-explorer/" />
+    <script>
+      // Change this if your repo name is different
+      const repoBase = "/exponent-explorer/";
+      const current =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+      if (!current.startsWith(repoBase)) {
+        const hash = window.location.hash || "";
+        window.location.replace(repoBase + hash);
+      }
+    </script>
+  </head>
+  <body>Redirecting…</body>
+</html>
