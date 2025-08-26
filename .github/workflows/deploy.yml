@@ -23,8 +23,6 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        with:
-          
 
       - name: Install deps
         run: npm install
